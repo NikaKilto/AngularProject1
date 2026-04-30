@@ -1,0 +1,21 @@
+<article class="col-md-8 m-3">
+  <div>
+    <label for="">Choose Image</label>
+    <input (change)="onInputChangeImg($event)" type="file" class="form-control" />
+  </div>
+  <div>
+    <label for="">Enter Name</label>
+    <input [(ngModel)]="tmpStudent.name" type="text" class="form-control" />
+  </div>
+  <div>
+    <label for="">Enter Country</label>
+    <input [(ngModel)]="tmpStudent.address.country" type="text" class="form-control" />
+  </div>
+  <div>
+    <label for="">Enter City</label>
+    <input [(ngModel)]="tmpStudent.address.city" type="text" class="form-control" />
+  </div>
+  <div>
+    <button (click)="onClickButton()" class="btn btn-dark m-3">Click</button>
+  </div>
+</article>

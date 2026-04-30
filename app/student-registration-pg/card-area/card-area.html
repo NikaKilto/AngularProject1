@@ -1,0 +1,16 @@
+<article class="col-md-8 m-3">
+  <div *ngFor="let student of students">
+    <div>
+      <img *ngIf="student.imageSrc" [src]="student.imageSrc" alt="" />
+    </div>
+    <div>
+      <h1>{{ student.name }}</h1>
+    </div>
+    <div>
+      <ul>
+        <li>{{ student.address.country }}</li>
+        <li>{{ student.address.city }}</li>
+      </ul>
+    </div>
+  </div>
+</article>

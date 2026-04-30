@@ -1,0 +1,4 @@
+<section>
+  <app-form-area (studentEventEmitter)="studentSubs($event)"></app-form-area>
+  <app-card-area *ngIf="studentList.length > 0" [students]="studentList"></app-card-area>
+</section>
